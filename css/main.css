@@ -9,6 +9,9 @@ html {
     max-width: 1200px;
     margin: 0 auto;
   }
+
+ /*Navbar*/
+
 header{
     display: flex;
     justify-content: space-between;
@@ -37,4 +40,92 @@ nav ul li a.active::before{
     width: 35%;
     border-bottom: 2px solid black;
     bottom: -6px;
+}
+
+/* Hero Section */
+
+main {
+  display:flex;
+  gap : 8em;
+  margin-top: 11em;
+}
+
+.left {
+  width: 45%;
+}
+
+.right {
+  flex-grow: 1;
+}
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 5.2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.subhead{
+  font-size: 1.8rem;
+}
+
+.button , .secondary{ 
+  display: flex;
+  gap: 2em;
+}
+
+.primary{
+  background-color: #F1E2D1;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1em 2em;
+  border-radius: 1.9em;
+  color: black;
+}
+
+.secondary{
+  text-decoration: none;
+  color: black;
+  font-size: 1.8em;
+  display: block;
+  padding: 1em 0;
+}
+
+.button{
+  margin: 5em 0;
+}
+
+.secondary svg{
+  width: 20px;
+}
+
+.new{
+  display: flex;
+  padding: 5em;
+  gap: 3em;
+  border: 1px solid black;
+  border-radius: .8em;
+  position: relative;
+}
+
+.new::before{
+  position: absolute;
+  content: "";
+  background: url(../image/confetti.svg) ;
+  height: 100px;
+  width: 100px;
+  top: -20px;
+  left: -20px;
+  z-index: 2;
+}
+p.money{
+  font-size: 3.3rem;
+  margin: 0;
+  font-weight: 200;
+  line-height: 100%;
+}
+p.details{
+  font-size: 1.4rem;
+  margin: 0;
 }
